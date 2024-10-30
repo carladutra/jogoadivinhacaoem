@@ -15,11 +15,19 @@ int main() {
         printf("Seu chute foi %d \n", chute);
         
             //SE O CHUTE FOR IGUAL AO NÚMERO SECRETO
+    
     if(chute == numerosecreto){
         printf("Parabéns!! Você acertou!!\n");
         printf("Jogue de novo, você é um bom jogador!\n");
     //CASO CONTRÁRIO
     }else{
+        if(chute > numerosecreto){
+            printf("O seu chute foi maior que o número secreto, tente novamente. \n");
+        if(chute < numerosecreto){
+                printf("O seu chute foi menor que o número secreto, tente novamente. \n");
+            }
+            
+        }
         printf("Você errou!!\n");
         printf("Não desanime, tente novamente! \n");
         
